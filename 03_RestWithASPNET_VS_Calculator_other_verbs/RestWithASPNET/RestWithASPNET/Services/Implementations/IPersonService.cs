@@ -9,7 +9,7 @@ namespace RestWithASPNET.Services.Implementations
         PersonModel FindByID(long id);
         List<PersonModel> FindAll();
         PersonModel Update(PersonModel person);
-        PersonModel Delete(long id);
+        void Delete(long id);
 
     }
 }
