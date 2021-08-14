@@ -27,7 +27,7 @@ namespace RestWithASPNET.Services.Implementations
             for(int i=0; i< 8; i++)
             {
                 PersonModel person = MockPerson(i);
-                persons.Add(person)
+                persons.Add(person);
             }
             return persons;
         }
