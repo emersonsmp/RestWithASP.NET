@@ -30,11 +30,14 @@ namespace RestWithASPNET
         {
             services.AddControllers();
 
+            //criação do service do contexto de banco de dados----------------------
+            //["Busca-se a correspondencia no appsettings.json"]
             var connection = Configuration["MySQLConnection:MySQLConnectionString"];
 
             services.AddDbContext<MySQLContext>(options => options.UseMySql(
                 connection, new MySqlServerVersion(new Version(8, 0, 26)))
             );
+            //----------------------------------------------------------------------
 
             //Dependency injection
             services.AddScoped<IPersonService, PersonServiceImplementation>();
