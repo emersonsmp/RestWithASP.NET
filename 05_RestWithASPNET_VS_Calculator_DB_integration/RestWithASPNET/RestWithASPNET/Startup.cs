@@ -1,18 +1,15 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+using RestWithASPNET.Business;
+using RestWithASPNET.Business.Implementations;
 using RestWithASPNET.Model.Context;
-using RestWithASPNET.Services.Implementations;
+using RestWithASPNET.Repository;
+using RestWithASPNET.Repository.Implementations;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace RestWithASPNET
 {
@@ -43,7 +40,8 @@ namespace RestWithASPNET
             services.AddApiVersioning();
 
             //Dependency injection
-            services.AddScoped<IPersonRepository, PersonServiceImplementation>();
+            services.AddScoped<IPersonRepository, PersonRepositoryImplementation>();
+            services.AddScoped<IPersonBusiness, PersonBusinessImplementation>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
