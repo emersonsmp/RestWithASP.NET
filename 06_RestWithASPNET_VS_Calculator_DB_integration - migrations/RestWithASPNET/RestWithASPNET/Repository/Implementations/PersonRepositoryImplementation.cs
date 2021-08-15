@@ -43,7 +43,7 @@ namespace RestWithASPNET.Repository.Implementations
 
         public PersonModel Update(PersonModel person)
         {
-            if (!Exists(person.Id)) return new PersonModel();
+            if (!Exists(person.Id)) return null;
 
             var result = _context.Persons.SingleOrDefault(p => p.Id.Equals(person.Id));
 
