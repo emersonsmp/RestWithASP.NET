@@ -39,6 +39,9 @@ namespace RestWithASPNET
             );
             //----------------------------------------------------------------------
 
+            //Versionamento API
+            services.AddApiVersioning();
+
             //Dependency injection
             services.AddScoped<IPersonService, PersonServiceImplementation>();
         }

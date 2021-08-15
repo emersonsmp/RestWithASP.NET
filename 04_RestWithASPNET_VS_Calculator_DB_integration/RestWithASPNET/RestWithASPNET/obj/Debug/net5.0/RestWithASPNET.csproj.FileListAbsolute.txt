@@ -75,3 +75,5 @@ A:\Source\RestWithASP-NET5\RestWithASP.NET\04_RestWithASPNET_VS_Calculator_DB_in
 A:\Source\RestWithASP-NET5\RestWithASP.NET\04_RestWithASPNET_VS_Calculator_DB_integration\RestWithASPNET\RestWithASPNET\obj\Debug\net5.0\RestWithASPNET.pdb
 A:\Source\RestWithASP-NET5\RestWithASP.NET\04_RestWithASPNET_VS_Calculator_DB_integration\RestWithASPNET\RestWithASPNET\obj\Debug\net5.0\RestWithASPNET.genruntimeconfig.cache
 A:\Source\RestWithASP-NET5\RestWithASP.NET\04_RestWithASPNET_VS_Calculator_DB_integration\RestWithASPNET\RestWithASPNET\obj\Debug\net5.0\RestWithASPNET.csproj.AssemblyReference.cache
+A:\Source\RestWithASP-NET5\RestWithASP.NET\04_RestWithASPNET_VS_Calculator_DB_integration\RestWithASPNET\RestWithASPNET\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+A:\Source\RestWithASP-NET5\RestWithASP.NET\04_RestWithASPNET_VS_Calculator_DB_integration\RestWithASPNET\RestWithASPNET\obj\Debug\net5.0\RestWithASPNET.MvcApplicationPartsAssemblyInfo.cs

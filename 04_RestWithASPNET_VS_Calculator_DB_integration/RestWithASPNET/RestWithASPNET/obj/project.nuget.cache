@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "RHZb5coGvTwpY5gx7+TtMCFbz+a4VFXJnfr7fGaum05KoXJ1b5x+YIsgMtFMTTWd4fz4WscUzu+pIZ5Bvoel8A==",
+  "dgSpecHash": "QErWdveXcOel2ArzkVllOdvjt9edLBUzEc2HBNz/tFEenlvgCfU5sW2Qee/T+l1r6MTcTGSKv7WXXofvDNQWiw==",
   "success": true,
   "projectFilePath": "A:\\Source\\RestWithASP-NET5\\RestWithASP.NET\\04_RestWithASPNET_VS_Calculator_DB_integration\\RestWithASPNET\\RestWithASPNET\\RestWithASPNET.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\emers\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.0.0\\microsoft.aspnetcore.mvc.versioning.5.0.0.nupkg.sha512",
     "C:\\Users\\emers\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.7\\microsoft.entityframeworkcore.5.0.7.nupkg.sha512",
     "C:\\Users\\emers\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.7\\microsoft.entityframeworkcore.abstractions.5.0.7.nupkg.sha512",
     "C:\\Users\\emers\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.7\\microsoft.entityframeworkcore.analyzers.5.0.7.nupkg.sha512",
