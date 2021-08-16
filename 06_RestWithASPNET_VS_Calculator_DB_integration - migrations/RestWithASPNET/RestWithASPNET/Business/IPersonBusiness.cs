@@ -10,6 +10,5 @@ namespace RestWithASPNET.Business
         List<PersonModel> FindAll();
         PersonModel Update(PersonModel person);
         void Delete(long id);
-
     }
 }
