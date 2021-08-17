@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace RestWithASPNET.Model
 {
     [Table("books")]
-    public class Books
+    public class Book
     {
         [Column("id")]
         public long Id { get; set; }

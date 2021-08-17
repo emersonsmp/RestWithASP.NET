@@ -16,7 +16,7 @@ namespace RestWithASPNET.Business.Implementations
             _repository = repository;
         }
 
-        public Books Create(Books book)
+        public Book Create(Book book)
         {
             return _repository.Create(book);
         }
@@ -26,17 +26,17 @@ namespace RestWithASPNET.Business.Implementations
             _repository.Delete(id);
         }
 
-        public List<Books> FindAll()
+        public List<Book> FindAll()
         {
             return _repository.FindAll();
         }
 
-        public Books FindByID(long id)
+        public Book FindByID(long id)
         {
             return _repository.FindByID(id);
         }
 
-        public Books Update(Books book)
+        public Book Update(Book book)
         {
             return _repository.Update(book);
         }

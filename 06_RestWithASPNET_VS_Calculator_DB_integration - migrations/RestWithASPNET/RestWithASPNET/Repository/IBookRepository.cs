@@ -8,10 +8,10 @@ namespace RestWithASPNET.Repository
 {
     public interface IBookRepository
     {
-        Books Create(Books person);
-        Books FindByID(long id);
-        List<Books> FindAll();
-        Books Update(Books book);
+        Book Create(Book person);
+        Book FindByID(long id);
+        List<Book> FindAll();
+        Book Update(Book book);
         void Delete(long id);
         public bool Exists(long id);
     }

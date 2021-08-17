@@ -8,10 +8,10 @@ namespace RestWithASPNET.Business
 {
     public interface IBookBusiness
     {
-        Books Create(Books book);
-        Books FindByID(long id);
-        List<Books> FindAll();
-        Books Update(Books book);
+        Book Create(Book book);
+        Book FindByID(long id);
+        List<Book> FindAll();
+        Book Update(Book book);
         void Delete(long id);
     }
 }

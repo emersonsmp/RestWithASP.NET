@@ -17,7 +17,7 @@ namespace RestWithASPNET.Repository.Implementations
             _context = context;
         }
 
-        public List<Books> FindAll()
+        public List<Book> FindAll()
         {
             try
             {
@@ -30,12 +30,12 @@ namespace RestWithASPNET.Repository.Implementations
             }
         }
 
-        public Books FindByID(long id)
+        public Book FindByID(long id)
         {
             return _context.Books.SingleOrDefault(p => p.Id.Equals(id));
         }
 
-        public Books Create(Books book)
+        public Book Create(Book book)
         {
             try
             {
@@ -69,7 +69,7 @@ namespace RestWithASPNET.Repository.Implementations
             }
         }      
 
-        public Books Update(Books book)
+        public Book Update(Book book)
         {
             if (!Exists(book.Id)) return null;
 
