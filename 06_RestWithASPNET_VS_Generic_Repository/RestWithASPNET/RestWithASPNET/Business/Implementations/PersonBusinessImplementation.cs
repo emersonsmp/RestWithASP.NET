@@ -10,30 +10,30 @@ namespace RestWithASPNET.Business.Implementations
     //CAMADA PARA COLOCAR AS REGRAS DE NEGOCIO E VALIDAÇÕES
     public class PersonBusinessImplementation : IPersonBusiness
     {
-        private readonly IRepository _repository;
+        private readonly IRepository<Person> _repository;
 
-        public PersonBusinessImplementation(IRepository repository)
+        public PersonBusinessImplementation(IRepository<Person> repository)
         {
             _repository = repository;
         }
 
-        public List<PersonModel> FindAll()
+        public List<Person> FindAll()
         {
             return _repository.FindAll();
         }
 
-        public PersonModel FindByID(long id)
+        public Person FindByID(long id)
         {
             return _repository.FindByID(id);
         }
 
-        public PersonModel Create(PersonModel person)
+        public Person Create(Person person)
         {
             //REGRA EXEMPLO: SÓ ADD SE ANO DE NASC > 1900
             return _repository.Create(person);
         }
 
-        public PersonModel Update(PersonModel person)
+        public Person Update(Person person)
         {
             return _repository.Update(person);
         }

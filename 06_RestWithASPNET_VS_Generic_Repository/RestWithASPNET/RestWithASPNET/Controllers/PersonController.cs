@@ -37,7 +37,7 @@ namespace RestWithASPNET.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody] PersonModel person)
+        public IActionResult Post([FromBody] Person person)
         {
             if (person == null)
                 return BadRequest();
@@ -45,7 +45,7 @@ namespace RestWithASPNET.Controllers
         }
 
         [HttpPut]
-        public IActionResult Put([FromBody] PersonModel person)
+        public IActionResult Put([FromBody] Person person)
         {
             if (person == null)
                 return BadRequest();

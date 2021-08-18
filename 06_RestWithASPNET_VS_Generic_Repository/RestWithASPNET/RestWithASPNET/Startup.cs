@@ -8,11 +8,11 @@ using RestWithASPNET.Business;
 using RestWithASPNET.Business.Implementations;
 using RestWithASPNET.Model.Context;
 using RestWithASPNET.Repository;
-using RestWithASPNET.Repository.Implementations;
 using Serilog;
 using System;
 using System.Collections.Generic;
 using MySqlConnector;
+using RestWithASPNET.Repository.Generic;
 
 namespace RestWithASPNET
 {
@@ -54,11 +54,10 @@ namespace RestWithASPNET
             services.AddApiVersioning();
 
             //Dependency injection
-            services.AddScoped<IRepository, PersonRepositoryImplementation>();
             services.AddScoped<IPersonBusiness, PersonBusinessImplementation>();
-
-            services.AddScoped<IBookRepository, BookRepositoryImplementation>();
             services.AddScoped<IBookBusiness, BookBusinessImplementation>();
+
+            services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
