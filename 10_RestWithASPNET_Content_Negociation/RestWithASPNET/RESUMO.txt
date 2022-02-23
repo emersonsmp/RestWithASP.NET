@@ -1,0 +1,12 @@
+ADCIONADO AO SETUP:
+
+services.AddMvc(options => {
+    options.RespectBrowserAcceptHeader = true;
+    options.FormatterMappings.SetMediaTypeMappingForFormat("xml", MediaTypeHeaderValue.Parse("application/xml").ToString());
+    options.FormatterMappings.SetMediaTypeMappingForFormat("json", MediaTypeHeaderValue.Parse("application/json").ToString());
+}).AddXmlSerializerFormatters();
+
+DESTA FORMA O NOSSO ENDPOINT RETORNARA TANTO XML, QUANTO JSON.
+
+TESTANDO: 
+BASTA ALTERAR NO HEADER DO POSTAMAN A PROPRIEDADE "ACCEPT" PARA "application/json" E "application/xml"
