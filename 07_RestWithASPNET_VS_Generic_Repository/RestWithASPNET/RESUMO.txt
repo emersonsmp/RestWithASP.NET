@@ -1,0 +1,9 @@
+- Criação de um GenericRepository<T>
+
+//Muda em tempo de execução
+praivate T Create (T item){
+...
+}
+
+Esse tipo de padrão alem de reduzir codigo, diminui o risco de erro 
+e deixa o codigo escalar de forma saudavel.
