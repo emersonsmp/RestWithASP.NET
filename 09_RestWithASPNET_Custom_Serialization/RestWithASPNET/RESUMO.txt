@@ -1,0 +1,1 @@
+Como mudar o nomes das propriedades enviadas via json e o nome dos seus retornos via [JsonPropertyName("sobrenome")]
