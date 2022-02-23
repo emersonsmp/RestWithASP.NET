@@ -1,0 +1,5 @@
+- Criação de metodo de leitura e criação de migrations 
+	V1__crate-person-table.sql;
+	V2__insert_into_person_table.sql;
+
+*OBS: Vx deve sempre ser incrementado! ***

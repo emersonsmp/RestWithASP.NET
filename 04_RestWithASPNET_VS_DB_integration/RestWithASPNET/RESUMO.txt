@@ -1,0 +1,5 @@
+- CRIAMOS BANCO DE DADOS;
+- CLASSE DE MAPEAMENTO E CONTEXTO;
+- E TESTAMOS ENDPOINTS
+- VERSIONAMENTO DE API
+- https://nelson-souza.medium.com/net-core-api-versioning-d4f869fb9052
