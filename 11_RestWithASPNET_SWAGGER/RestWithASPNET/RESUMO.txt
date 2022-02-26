@@ -1,0 +1,3 @@
+Adicionado swagger;
+Importado api no postman;
+Criação de variaveis de ambiente;
