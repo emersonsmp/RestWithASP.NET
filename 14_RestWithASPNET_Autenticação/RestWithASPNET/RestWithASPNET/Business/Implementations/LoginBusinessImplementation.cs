@@ -68,7 +68,11 @@ namespace RestWithASPNET.Business.Implementations
 
             var user = _repository.ValidateCreentials(username);
 
-            if (user == null || user.RefreshToken != refreshToken || user.RefreshTokenExpiryTime <= DateTime.Now) 
+            var IsUserNull = user == null;
+            var IsRefreshTokenDiferent = user.RefreshToken != refreshToken;
+            var IsExpired = user.RefreshTokenExpiryTime <= DateTime.Now;
+
+            if (IsUserNull || IsRefreshTokenDiferent || IsExpired) 
                 return null;
 
             accessToken = _tokenService.GenerateAcessToken(principal.Claims);

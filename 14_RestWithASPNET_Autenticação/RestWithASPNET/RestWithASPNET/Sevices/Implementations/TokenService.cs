@@ -55,13 +55,21 @@ namespace RestWithASPNET.Sevices.Implementations
                 ValidateIssuer = false,
                 ValidateIssuerSigningKey = true,
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_Configuration.Secret)),
-                ValidateLifetime = false
+                ValidateLifetime = true
             };
 
             var tokenHandler = new JwtSecurityTokenHandler();
             SecurityToken securityToken;
+            ClaimsPrincipal principal;
 
-            ClaimsPrincipal principal = tokenHandler.ValidateToken(token, tokenValidationParameters, out securityToken);
+            try
+            {
+                principal = tokenHandler.ValidateToken(token, tokenValidationParameters, out securityToken);
+
+            }catch(SecurityTokenExpiredException e)
+            {
+                throw new SecurityTokenException("Expired Token");
+            }
 
             var jwtSeurityToken = securityToken as JwtSecurityToken;
 
